@@ -1,0 +1,36 @@
+.com_calendar {}
+
+/* calendar */
+.com_calendar .calendar { 
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.com_calendar .calendar .week { height: 100px; }
+
+.com_calendar .calendar .day {
+	border: 1px solid black;
+	vertical-align: top;
+	width: 14%;
+}
+.com_calendar .calendar .day.today { background: #e3e3e3; }
+
+.com_calendar .day.padding {
+	border: none;
+}
+
+.com_calendar .day > div { padding: 2px 5px; }
+.com_calendar .day .date { margin: 0 0 5px; }
+
+/* events */
+.com_calendar .events {}
+.com_calendar .events .event { margin-top: 1em; }
+.com_calendar .events .event:first-child { margin-top: 0; }
+
+
+
+/* misc */
+.left { float: left; }
+.right { float: right; }
+.center { text-align: center; }
+.clear { clear: both; }
