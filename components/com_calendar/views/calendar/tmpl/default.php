@@ -1,6 +1,10 @@
 <style src="media://com_calendar/css/site.css" />
 
 <div class="com_calendar">
+
+		<h1 class="componentheading">
+			<?= @escape($calendar->title); ?>
+		</h1>
 	
 	<table class="calendar">
 		<thead>
