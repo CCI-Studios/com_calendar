@@ -26,7 +26,7 @@
 		<input type="text" name="intro" id="field_intro" value="<?=$event->intro;?>" /><br/>
 		
 		<label for="field_calendar_id" class="mainlabel"><?= @text('Calendar') ?>:</label>
-		<?= @helper('admin::com.calendar.template.helper.listbox.calendar')?><br/>
+		<?= @helper('admin::com.calendar.template.helper.listbox.calendars')?><br/>
 	</fieldset>
 	
 	<fieldset>

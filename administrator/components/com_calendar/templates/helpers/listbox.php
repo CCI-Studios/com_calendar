@@ -3,7 +3,7 @@
 class ComCalendarTemplateHelperListbox extends ComDefaultTemplateHelperListbox
 {
 	
-	public function calendar($config = array())
+	public function calendars($config = array())
 	{
 		$config = new KConfig($config);
 		
