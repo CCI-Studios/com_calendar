@@ -14,4 +14,8 @@
 		<file module="mod_calendar">mod_calendar.php</file>
 		<file>html.php</file>
 	</files>
+
+	<params addpath="/administrator/components/com_calendar/elements">
+		<param type="calendars" name="calendar_id" default="0" Label="Calendar" />
+	</params>
 </install>

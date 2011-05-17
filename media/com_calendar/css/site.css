@@ -1,4 +1,4 @@
-.com_calendar {}
+.com_calendar { position: relative; }
 
 /* calendar */
 .com_calendar .calendar { 
@@ -34,3 +34,15 @@
 .right { float: right; }
 .center { text-align: center; }
 .clear { clear: both; }
+
+
+/* popover */
+#popover_event {
+	background: red;
+	display: none;
+	padding: 10px;
+	
+	left: 0;
+	position: absolute;
+	top: 0px;
+}

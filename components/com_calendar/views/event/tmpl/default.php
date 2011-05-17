@@ -1,7 +1,7 @@
 <style src="media://com_calendar/css/site.css" />
 
 <div class="com_calendar">
-	<div class="event">
+	<div id="com_calendar_event" class="event">
 		<h1 class="componentheading"><?= $event->title?></h1>
 		
 		<p>

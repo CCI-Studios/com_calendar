@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="View Single Calendar">
+		<message><![CDATA[]]></message>		
+	</layout>
+	
+	<url addpath="/administrator/components/com_calendar/elements">
+		<param type="calendars" name="id" default="0" Label="Calendar" />
+	</url>
+</metadata>
