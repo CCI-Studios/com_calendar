@@ -1,5 +1,5 @@
 <div id="popover_event"><div>
-	<h1 class="componentheading"><?= $event->title?></h1>
+	<h2><?= $event->title?></h2>
 	
 	<p>
 		<? if (($event->date != '') || ($event->time != '')) {
