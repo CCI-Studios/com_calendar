@@ -12,8 +12,8 @@
 		<thead>
 			<tr>
 				<th align="center"><a href="<?= @route($prev_month) ?>">&lt;&lt;</a></th>
-				<th colspan="5">
-					<h2 class="center"><?= date('F, Y', strtotime($year .'-'. $month .'-01'))?></h2>
+				<th colspan="5" class="title">
+                    <?= date('F, Y', strtotime($year .'-'. $month .'-01'))?>
 				</th>
 				<th align="center"><a href="<?= @route($next_month)?>">&gt;&gt;</a></th>
 			</tr>
