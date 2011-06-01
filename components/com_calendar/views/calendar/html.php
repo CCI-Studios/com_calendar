@@ -9,7 +9,11 @@ class ComCalendarViewCalendarHtml extends ComDefaultViewHtml
 		
 		$eventModel = KFactory::tmp('site::com.calendar.model.events');
 		if (is_numeric($cal->id)) 
-			$eventModel->set('calendar_calendar_id', $cal->id);
+			$eventModel
+				->set('calendar_calendar_id', $cal->id)
+				->month(KRequest::get('get.month', 'int'))
+				->year(KRequest::get('get.year', 'int'))
+				->limit(200);
 		else
 			$eventModel->set('calendar_calendar_id', 0);
 		$events = $eventModel->getlist();
