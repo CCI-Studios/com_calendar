@@ -17,6 +17,7 @@ class ModCalendarHtml extends ModDefaultHtml
 				->limit(2)
 				->layout('widget')
 				->set('calendar_calendar_id', $this->params->get('calendar_id'))
+				->future(true)
 				->display();
 	}
 }

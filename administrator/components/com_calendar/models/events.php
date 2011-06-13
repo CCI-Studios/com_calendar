@@ -10,7 +10,8 @@ class ComCalendarModelEvents extends ComDefaultModelDefault
 			->insert('day', 'int')
 			->insert('month', 'int')
 			->insert('year', 'int')
-			->insert('calendar_calendar_id', 'int');
+			->insert('calendar_calendar_id', 'int')
+			->insert('future', 'boolean', false);
 	}
 	
 	protected function _buildQueryOrder(KDatabaseQuery $query)
@@ -26,6 +27,7 @@ class ComCalendarModelEvents extends ComDefaultModelDefault
 	{
 		if (is_numeric($this->_state->day)) {
 			$query->where('DAYOFMONTH(tbl.date)', '=', $this->_state->day);
+		$state = $this->_state;
 		}
 		if (is_numeric($this->_state->month)) {
 			$query->where('MONTH(tbl.date)', '=', $this->_state->month);
@@ -36,6 +38,9 @@ class ComCalendarModelEvents extends ComDefaultModelDefault
 		
 		if (is_numeric($this->_state->calendar_calendar_id)) {
 			$query->where('tbl.calendar_calendar_id', '=', $this->_state->calendar_calendar_id);
+		if ($state->future) {
+			$query->where('tbl.date', '>=', date('Y-m-d'));
+		}
 		}
 		
 		parent::_buildQueryWhere($query);
