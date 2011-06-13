@@ -9,7 +9,7 @@
 				<th width="5"><?= @text('Num')?></th>
 				<th width="5">&nbsp;</th>
 				<th><?= @helper('grid.sort', array('column'=>'title'))?></th>
-				<th><?= @helper('grid.sort', array('column'=>'date'))?></th>
+				<th width="200"><?= @helper('grid.sort', array('column'=>'date'))?></th>
 				<th width="5"><?= @text('id') ?></th>
 			</tr>
 		</thead>
@@ -31,7 +31,7 @@
 				<td><a href="<?= @route('view=event&id='.$event->id)?>">
 					<?= $event->title ?>
 				</a></td>
-				<td width="150" align="center"><?= $event->date .', '. $event->time ?></td>
+				<td align="center"><?= $event->date .', '. $event->time ?></td>
 				<td align="center"><?= $event->id ?></td>
 			</tr>
 			<? $i++;
