@@ -14,7 +14,7 @@ class ModCalendarHtml extends ModDefaultHtml
 	public function display()
 	{	
 		echo KFactory::tmp('site::com.calendar.controller.events')
-				->limit(2)
+				->limit(3)
 				->layout('widget')
 				->set('calendar_calendar_id', $this->params->get('calendar_id'))
 				->future(true)
