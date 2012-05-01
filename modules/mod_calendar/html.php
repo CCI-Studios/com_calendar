@@ -5,7 +5,7 @@ class ModCalendarHtml extends ModDefaultHtml
 	public function _initialize(KConfig $config)
 	{
 		$config->append(array(
-			'model'	=> 'site::com.calendar.model.calendars',
+			'model'	=> 'com://site/calendar.model.calendars',
 		));
 		
 		parent::_initialize($config);
@@ -13,7 +13,7 @@ class ModCalendarHtml extends ModDefaultHtml
 	
 	public function display()
 	{	
-		echo KFactory::tmp('site::com.calendar.controller.events')
+		return KFactory::tmp('com://site/calendar.controller.events')
 				->limit(3)
 				->layout('widget')
 				->set('calendar_calendar_id', $this->params->get('calendar_id'))
