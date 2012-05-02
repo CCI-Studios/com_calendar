@@ -4,7 +4,15 @@
 		<message><![CDATA[]]></message>		
 	</layout>
 	
-	<url addpath="/administrator/components/com_calendar/elements">
-		<param type="calendars" name="id" default="0" Label="Calendar" />
-	</url>
+	<fields name="request">
+		<fieldset name="request"
+			addfieldpath="/administrator/components/com_calendar/models/fields">
+
+			<field name="id" type="calendars"
+				label="Calendar"
+				required="true"
+				description="COM_CALENDAR_FIELD_CALENDAR"
+			/>
+		</fieldset>
+	</fields>
 </metadata>

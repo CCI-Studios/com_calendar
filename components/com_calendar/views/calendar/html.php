@@ -7,7 +7,7 @@ class ComCalendarViewCalendarHtml extends ComDefaultViewHtml
 	{
 		$cal = $this->getModel()->getItem();
 		
-		$eventModel = KFactory::tmp('com://site/calendar.model.events');
+		$eventModel = $this->getService('com://site/calendar.model.events');
 		if (is_numeric($cal->id)) 
 			$eventModel
 				->set('calendar_calendar_id', $cal->id)

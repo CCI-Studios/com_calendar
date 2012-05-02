@@ -1,6 +1,8 @@
 <?= JHtml::_('behavior.mootools')?>
 <script src="media://lib_koowa/js/koowa.js" />
-<script src="media://com_calendar/js/popover.js" />
+<?php
+	//<script src="media://com_calendar/js/popover.js" /> 
+?>
 <style src="media://com_calendar/css/site.css" />
 
 <div class="com_calendar">

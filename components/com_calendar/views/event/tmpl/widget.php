@@ -18,5 +18,5 @@
 		<? endif; ?>
 	</p>
 	
-	<?= isset($event->description)? $event->description:'' ?>
+	<?= isset($event->description)? $event->description : '' ?>
 </div></div>

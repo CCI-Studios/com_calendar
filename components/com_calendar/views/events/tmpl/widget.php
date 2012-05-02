@@ -19,6 +19,6 @@
 	</ul>
 	
 	<div class="readmore"><div>
-		<a href="<?= @route('view=calendar&id='.$state->calendar_calendar_id)?>"><?= @text('View Calendar')?></a>
+		<a href="<?= JRoute::_($link)?>"><?= @text('View Calendar')?></a>
 	</div></div>
 </div>

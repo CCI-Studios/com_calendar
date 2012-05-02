@@ -24,7 +24,7 @@
 		<?= isset($event->description)? $event->description:'' ?>
 		
 		<p class="back">
-			<a href="<?= @route('view=calendar&id='. $event->calendar_calendar_id) ?>"><?= @text('Back')?></a>
+			<a href="<?= JRoute::_($link) ?>"><?= @text('Back')?></a>
 		</p>
 	</div>
 </div>

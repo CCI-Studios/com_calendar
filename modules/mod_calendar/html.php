@@ -13,10 +13,10 @@ class ModCalendarHtml extends ModDefaultHtml
 	
 	public function display()
 	{	
-		return KFactory::tmp('com://site/calendar.controller.events')
+		return $this->getService('com://site/calendar.controller.events')
 				->limit(3)
 				->layout('widget')
-				->set('calendar_calendar_id', $this->params->get('calendar_id'))
+				->set('calendar_calendar_id', $this->module->params->get('calendar_id'))
 				->future(true)
 				->display();
 	}

@@ -1,11 +1,4 @@
-<?php
-/**
- * @version		$Id: bannerclient.php 21097 2011-04-07 15:38:03Z dextercowley $
- * @copyright	Copyright (C) 2005 - 2011 Open Source Matters, Inc. All rights reserved.
- * @license		GNU General Public License version 2 or later; see LICENSE.txt
- */
-
-defined('JPATH_BASE') or die;
+<? defined('JPATH_BASE') or die;
 
 jimport('joomla.html.html');
 jimport('joomla.form.formfield');
@@ -13,13 +6,13 @@ jimport('joomla.form.helper');
 JFormHelper::loadFieldClass('list');
 
 /**
- * Bannerclient Field class for the Joomla Framework.
+ * Calendar Field class for the Joomla Framework.
  *
  * @package		Joomla.Administrator
  * @subpackage	com_banners
  * @since		1.6
  */
-class JFormFieldGalleries extends JFormFieldList
+class JFormFieldCalendars extends JFormFieldList
 {
 	/**
 	 * The form field type.

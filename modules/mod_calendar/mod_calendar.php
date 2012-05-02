@@ -1,7 +1,7 @@
 <?php
 defined('KOOWA') or die;
 
-KLoader::load('com://site/calendar.mappings');
+KLoader::loadIdentifier('com://site/calendar.aliases');
 echo KService::get('mod://site/calendar.html')
 	->module($module)
 	->display();
