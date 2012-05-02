@@ -19,8 +19,10 @@
 		<input type="text" name="date" id="field_date" value="<?=$event->date;?>" />
 		<input type="reset" class="button" value="..." onclick="return showCalendar('field_date','%Y-%m-%d');" /><br/>
 		
-		<label for="field_time" class="mainlabel"><?= @text('Time') ?>:</label>
-		<input type="text" name="time" id="field_time" value="<?=$event->time;?>" /><br/>
+		<label for="field_start_time" class="mainlabel"><?= @text('Start Time') ?>:</label>
+		<input type="text" name="start_time" id="field_start_time" value="<?=$event->start_time;?>" /><br/>
+		<label for="field_end_time" class="mainlabel"><?= @text('End Time') ?>:</label>
+		<input type="text" name="end_time" id="field_end_time" value="<?=$event->end_time;?>" /><br/>
 		
 		<label for="field_intro" class="mainlabel"><?= @text('Intro') ?>:</label>
 		<input type="text" name="intro" id="field_intro" value="<?=$event->intro;?>" /><br/>

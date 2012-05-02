@@ -7,7 +7,7 @@
 		<? foreach ($events as $event): ?>
 			<div class="event">
 				<div class="date">
-					<h2><?= $event->date ?> | <?= $event->time ?></h2>
+					<h2><?= $event->date ?> | <?= $event->start_time ?></h2>
 				</div>
 				<div class="intro">
 					<?= $event->description ?>

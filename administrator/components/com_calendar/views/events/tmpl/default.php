@@ -31,7 +31,7 @@
 				<td><a href="<?= @route('view=event&id='.$event->id)?>">
 					<?= $event->title ?>
 				</a></td>
-				<td align="center"><?= $event->date .', '. $event->time ?></td>
+				<td align="center"><?= $event->date .', '. $event->start_time .' - '. $event->end_time ?></td>
 				<td align="center"><?= $event->id ?></td>
 			</tr>
 			<? $i++;

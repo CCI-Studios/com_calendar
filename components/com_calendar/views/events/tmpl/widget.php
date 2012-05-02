@@ -6,11 +6,11 @@
 					<? if ($event->date != ''): ?>
 						<?= date('F d, Y', strtotime($event->date)); ?>
 					<? endif; ?>
-					<? if ($event->date != '' && $event->time != ''): ?>
+					<? if ($event->date != '' && $event->start_time != ''): ?>
 					 | 
 					<? endif; ?>
-					<? if ($event->time != ''): ?>	
-						<?= $event->time ?>
+					<? if ($event->start_time != ''): ?>	
+						<?= $event->start_time ?>
 					<? endif; ?>
 				</div>
 				<div class="intro"><?= $event->description ?></div>

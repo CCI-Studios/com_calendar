@@ -9,10 +9,10 @@
 				echo @text('Time') .': ';
 				if ($event->date != '')
 					echo date('l F jS, Y', strtotime($event->date));
-				if ($event->date != '' && $event->time != '')
+				if ($event->date != '' && ($event->start_time != '' || $event->end_time != ''))
 					echo ' at ';
-				if ($event->time != '')
-					echo $event->time;
+				if ($event->start_time != '')
+					echo $event->start_time;
 				echo '<br/>';
 			} ?>
 		
