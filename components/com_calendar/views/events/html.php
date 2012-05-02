@@ -13,7 +13,7 @@ class ComCalendarViewEventsHtml extends ComDefaultViewHtml
 
 		if ($itemid) {
 			$itemid = '&Itemid='. $itemid->id;
-			$link .= 'Itemid='. $itemid->id;
+			$link .= 'Itemid='. $itemid;
 		} else {
 			$itemid = '';
 			$link .= 'option=com_calendar&view=calendar&id='.$state->calendar_calendar_id;
