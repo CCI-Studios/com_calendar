@@ -8,10 +8,11 @@ class ComCalendarTemplateHelperListbox extends ComDefaultTemplateHelperListbox
 		$config = new KConfig($config);
 		
 		$config->append(array(
-			'model' => 'calendars',
-			'name'	=> 'calendar_calendar_id',
-			'value'	=> 'id',
-			'text'	=>	'title',
+			'model'		=> 'calendars',
+			'name'		=> 'calendar_calendar_id',
+			'value'		=> 'id',
+			'text'		=> 'title',
+			'deselect'	=> false,
 		));
 		
 		return parent::_listbox($config);

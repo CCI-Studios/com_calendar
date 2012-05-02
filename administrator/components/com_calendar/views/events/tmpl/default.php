@@ -1,16 +1,18 @@
+<? defined('KOOWA') or die('Nooku not installed'); ?>
+<? @helper('behavior.mootools') ?>
+<style src="media://lib_koowa/css/koowa.css" />
 <script src="media://lib_koowa/js/koowa.js" />
-<style src="media://lib_koowa/css/admin.css" />
 <style src="media://com_calendar/css/admin.css" />
 
-<form action="<?= @route() ?>" method="get">
+<form action="<?= @route() ?>" method="get" class="-koowa-grid">
 	<table class="adminlist">
 		<thead>
 			<tr>
-				<th width="5"><?= @text('Num')?></th>
-				<th width="5">&nbsp;</th>
+				<th width="5"><?= @text('#')?></th>
+				<th width="10">&nbsp;</th>
 				<th><?= @helper('grid.sort', array('column'=>'title'))?></th>
 				<th width="200"><?= @helper('grid.sort', array('column'=>'date'))?></th>
-				<th width="5"><?= @text('id') ?></th>
+				<th width="5"><?= @helper('grid.sort', array('column' => 'id', 'title' => 'ID')) ?></th>
 			</tr>
 		</thead>
 		
