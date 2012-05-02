@@ -1,26 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE install SYSTEM "http://www.joomla.org/xml/dtd/1.5/module-install.dtd">
-<install type="module" version="1.5.0" method="upgrade">
-	<name>Calendar</name>
-	<author>Jonathan bennett</author>
-	<creationDate>May 2011</creationDate>
-	<copyright>Copyright (C) 2010 Timble CVBA and Contributors. (http://www.timble.net)</copyright>
-	<license>GNU GPLv3 - http://www.gnu.org/licenses/gpl.html</license>
-	<authorEmail>info@nooku.org</authorEmail>
-	<authorUrl>www.nooku.org</authorUrl>
-	<version>0.7.0</version>
-	<description>Example Nooku Framework Module</description>
-	<files>
-		<file module="mod_calendar">mod_calendar.php</file>
-		<file>html.php</file>
-	</files>
-
-	<params addpath="/administrator/components/com_calendar/elements">
-		<param type="calendars" name="calendar_id" default="0" Label="Calendar" />
-	</params>
-</install>
-
-<?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="1.7" client="site" method="upgrade">
 	<name>mod_calendar</name>
 	<author>Jonathan Bennett</author>
