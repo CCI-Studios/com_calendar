@@ -10,7 +10,8 @@ CREATE TABLE IF NOT EXISTS `#__calendar_events` (
 	`title` VARCHAR(250) NOT NULL,
 	`location` VARCHAR(250) NOT NULL,
 	`date` DATE NOT NULL,
-	`time` VARCHAR NOT NULL,
+	`start_time` VARCHAR(20) NOT NULL,
+	`end_time` VARCHAR(20) NOT NULL,
 	`intro` VARCHAR(250) NOT NULL,
 	`description` TEXT NOT NULL,
 	
