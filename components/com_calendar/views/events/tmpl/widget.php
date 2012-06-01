@@ -7,7 +7,7 @@
 						<?= $event->title ?>
 					</a>
 				</div>
-				<div class="intro"><?= $event->description ?></div>
+				<div class="intro"><?= $event->intro ?></div>
 				<div class="date">
 					<? if ($event->date != ''): ?>
 						<?= date('F d, Y', strtotime($event->date)); ?>

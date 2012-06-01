@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS `#__calendar_events` (
 	`start_time` VARCHAR(20) NOT NULL,
 	`end_time` VARCHAR(20) NOT NULL,
 	`intro` VARCHAR(250) NOT NULL,
-	`description` TEXT NOT NULL,
+	`description` TEXT NOT NULL COMMENT '@Filter("html")',
 	
 	`calendar_calendar_id` BIGINT(20) UNSIGNED NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
