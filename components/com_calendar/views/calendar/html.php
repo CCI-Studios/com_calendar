@@ -11,8 +11,8 @@ class ComCalendarViewCalendarHtml extends ComDefaultViewHtml
 		if (is_numeric($cal->id)) 
 			$eventModel
 				->set('calendar_calendar_id', $cal->id)
-				->month(KRequest::get('get.month', 'int'))
-				->year(KRequest::get('get.year', 'int'))
+				->month(KRequest::get('get.month', 'int', date('m')))
+				->year(KRequest::get('get.year', 'int', date('Y')))
 				->limit(200);
 		else
 			$eventModel->set('calendar_calendar_id', 0);
