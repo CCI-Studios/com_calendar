@@ -18,6 +18,11 @@ class ComCalendarControllerToolbarMenubar extends ComDefaultControllerToolbarMen
 			'active'	=> ($name === 'event')
 		));
 
+		$this->addCommand('Categories', array(
+			'href'		=> JRoute::_('index.php?option=com_calendar&view=categories'),
+			'active'	=> ($name === 'category')
+		));
+
 		return parent::getCommands();
 	}
 

@@ -48,6 +48,10 @@
 					<label for="field_calendar_id"><?= @text('Calendar') ?>:</label>
 					<?= @helper('listbox.calendars') ?>
 				</li>
+				<li>
+					<label for="field_category_id"><?= @text('Category') ?>:</label>
+					<?= @helper('listbox.categories') ?>
+				</li>
 		</fieldset>
 		
 		<fieldset>
