@@ -47,7 +47,7 @@
 					<? foreach ($events as $event): ?>
 						<? if ($event->date == $date_str): ?>
 							<div class="event">
-								<div class="title"><a href="<?= @route('view=event&id='.$event->id) ?>"><?= $event->title?>:</a></div>
+								<div class="title"><a style="<?= ($event->category)? "color: #{$event->category->color}":''; ?>" href="<?= @route('view=event&id='.$event->id) ?>"><?= $event->title?>:</a></div>
 								<div class="intro"><?= $event->intro ?></div>
 							</div>
 						<? endif; ?>
@@ -67,3 +67,8 @@
 	
 	<div id="popover_event"></div>
 </div>
+
+<?= KService::get('com://site/calendar.controller.category')
+		->view('categories')
+		->layout('legend')
+		->display() ?>

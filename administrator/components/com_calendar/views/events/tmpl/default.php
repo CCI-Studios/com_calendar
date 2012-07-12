@@ -12,6 +12,7 @@
 				<th width="10">&nbsp;</th>
 				<th><?= @helper('grid.sort', array('column'=>'title'))?></th>
 				<th width="200"><?= @helper('grid.sort', array('column'=>'date'))?></th>
+				<th width="200"><?= @helper('grid.sort', array('column'=>'calendar_category_id', 'title'=>'Category ID'))?></th>
 				<th width="5"><?= @helper('grid.sort', array('column' => 'id', 'title' => 'ID')) ?></th>
 			</tr>
 		</thead>
@@ -34,6 +35,7 @@
 					<?= $event->title ?>
 				</a></td>
 				<td align="center"><?= $event->date .', '. $event->start_time .' - '. $event->end_time ?></td>
+				<td align="center"><?= $event->category->title ?></td>
 				<td align="center"><?= $event->id ?></td>
 			</tr>
 			<? $i++;
